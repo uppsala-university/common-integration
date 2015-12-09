@@ -11,6 +11,7 @@
 	<modules>
 		<module>esb-datasource-logdb</module>
 		<module>esb-amq</module>
+		<module>common-integration-packaging-karaf</module>
 	</modules>
 
 	<properties>
