@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0" name="UU Integration">
+<!-- To use with ServiceMix >= 6.0.0
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="UU-Dependencies">
+-->
+
+  <feature name="uu-integration-all" version="1.0.0-SNAPSHOT" description="All UU integration features"> <!-- install="auto" -->
+     <feature version="1.0.0-SNAPSHOT">esb-datasource-logdb</feature>
+     <feature version="1.0.0-SNAPSHOT">esb-amq</feature>
+  </feature>
+
+  <feature name="esb-datasource-logdb" version="1.0.0-SNAPSHOT" description="ESB LogDB datasource">
+    <!-- Prerequisite bundles: -->
+    <bundle>mvn:org.apache.geronimo.specs/geronimo-j2ee-connector_1.5_spec/2.0.0</bundle>
+    <bundle>mvn:org.apache.geronimo.components/geronimo-connector/2.2.2</bundle>
+    <!-- Drivers: -->
+    <bundle>wrap:mvn:mysql/mysql-connector-java/5.1.35</bundle>
+    <bundle>wrap:mvn:org.tranql/tranql-connector/1.8</bundle>
+    <bundle>wrap:mvn:org.tranql/tranql-connector-mysql-common/1.6</bundle>
+    <bundle>mvn:se.uu.its.integration/esb-datasource-logdb/1.0-SNAPSHOT</bundle>
+  </feature>
+
+  <feature name="esb-amq" version="1.0.0-SNAPSHOT" description="ESB ActiveMQ broker OSGi services">
+    <bundle>mvn:org.apache.geronimo.components/geronimo-connector/2.2.2</bundle>
+    <bundle>mvn:se.uu.its.integration/esb-amq/1.0-SNAPSHOT</bundle>
+  </feature>
+
+</features>
