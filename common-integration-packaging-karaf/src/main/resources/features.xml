@@ -4,11 +4,6 @@
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="UU-Dependencies">
 -->
 
-  <feature name="uu-integration-all" version="1.0.0-SNAPSHOT" description="All UU integration features"> <!-- install="auto" -->
-     <feature version="1.0.0-SNAPSHOT">esb-datasource-logdb</feature>
-     <feature version="1.0.0-SNAPSHOT">esb-amq</feature>
-  </feature>
-
   <feature name="esb-datasource-logdb" version="1.0.0-SNAPSHOT" description="ESB LogDB datasource">
     <!-- Prerequisite bundles: -->
     <bundle>mvn:org.apache.geronimo.specs/geronimo-j2ee-connector_1.5_spec/2.0.0</bundle>

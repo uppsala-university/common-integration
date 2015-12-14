@@ -7,7 +7,7 @@ xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.o
 default-activation="eager">
 
 	<!-- Properties from /opt/servicemix/apache-servicemix-5.4.0/etc/se.uu.its.integration.uu-integration.cfg -->
-    <cm:property-placeholder persistent-id="se.uu.its.integration.esb-datasource-logdb">
+    <cm:property-placeholder persistent-id="se.sunet.ati.integration.esb-datasource-logdb">
         <cm:default-properties>
             <cm:property name="ds.pw" value="foobar"/>
             <cm:property name="ds.host" value="localhost"/>
