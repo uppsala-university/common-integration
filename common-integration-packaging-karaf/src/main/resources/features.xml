@@ -15,9 +15,9 @@
     <bundle>mvn:se.uu.its.integration/esb-datasource-logdb/1.0-SNAPSHOT</bundle>
   </feature>
 
-  <feature name="esb-amq" version="1.0.0-SNAPSHOT" description="ESB ActiveMQ broker OSGi services">
+  <feature name="common-amq" version="1.0.0-SNAPSHOT" description="Common broker OSGi services">
     <bundle>mvn:org.apache.geronimo.components/geronimo-connector/2.2.2</bundle>
-    <bundle>mvn:se.uu.its.integration/esb-amq/1.0-SNAPSHOT</bundle>
+    <bundle>mvn:se.sunet.ati.integration/common-amq/1.0.0-SNAPSHOT</bundle>
   </feature>
 
 </features>
