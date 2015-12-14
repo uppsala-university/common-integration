@@ -9,7 +9,7 @@
 	<name>Common Integration Components</name>
 
 	<modules>
-		<module>esb-datasource-logdb</module>
+		<module>common-logdb-datasource</module>
 		<module>common-amq</module>
 		<module>common-integration-packaging-karaf</module>
 	</modules>
