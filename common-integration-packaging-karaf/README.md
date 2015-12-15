@@ -15,6 +15,6 @@ Deploy
 
 In Karaf/Servicemix shell:
 
-    # features:repo-add mvn:se.uu.its.integration/common-integration-packaging-karaf/1.0.0-SNAPSHOT/xml/features
-    features:addurl mvn:se.uu.its.integration/common-integration-packaging-karaf/1.0.0-SNAPSHOT/xml/features
-    features:install common-integration-all
+    features:addurl mvn:se.sunet.ati.integration/common-integration-packaging-karaf/1.0.0-SNAPSHOT/xml/features
+    features:install common-logdb-datasource
+    features:install common-amq
