@@ -9,10 +9,10 @@
 
 	<cm:property-placeholder persistent-id="se.sunet.ati.integration.amq">
 		<cm:default-properties>
-			<cm:property name="amq.url" value="tcp://localhost:61616" />
-			<cm:property name="amq.deadletterUrl" value="tcp://localhost:61617" />
-			<cm:property name="amq.user" value="smx" />
-			<cm:property name="amq.pw" value="smx" />
+			<cm:property name="amq.url" value="tcp://localhost:61617" />
+			<cm:property name="amq.deadletterUrl" value="tcp://localhost:61618" />
+			<cm:property name="amq.user" value="admin" />
+			<cm:property name="amq.pw" value="admin" />
 		</cm:default-properties>
 	</cm:property-placeholder>
 
