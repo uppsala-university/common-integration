@@ -13,8 +13,8 @@ Build
 Deploy
 ------
 
-In Karaf/Servicemix shell:
+In Karaf shell:
 
-    features:addurl mvn:se.sunet.ati.integration/common-integration-packaging-karaf/1.0.0-SNAPSHOT/xml/features
-    features:install common-logdb-datasource
-    features:install common-amq
+    repo-add mvn:se.sunet.ati.integration/common-integration-packaging-karaf/1.0.0-SNAPSHOT/xml/features
+    feature:install common-logdb-datasource
+    feature:install common-amq
