@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.3.0" name="Common Integration">
 
+
   <repository>mvn:org.apache.camel.karaf/apache-camel/2.16.0/xml/features</repository>
   <repository>mvn:org.apache.activemq/activemq-karaf/5.12.1/xml/features</repository>
+
+  <!--  This is where we find org.osgi.service.jdbc that is needed by Aries JPA to
+        get the datasource for the EntityManager.
+  -->
+  <repository>mvn:org.ops4j.pax.jdbc/pax-jdbc-features/0.7.0/xml/features</repository>
 
   <feature name="common-logdb-datasource" version="1.0.0-SNAPSHOT" description="Common LogDB datasource">
     <!-- Prerequisite bundles: -->
     <feature>connector</feature>
+    <feature>pax-jdbc-spec</feature>
     <!-- Drivers: -->
     <bundle>wrap:mvn:mysql/mysql-connector-java/5.1.35</bundle>
     <bundle>wrap:mvn:org.tranql/tranql-connector/1.8</bundle>
