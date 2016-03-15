@@ -4,6 +4,12 @@ Application Packaging for Karaf
 Features XML for Application Packaging in Karaf:
 
 
+Configuration
+-------------
+
+Copy the property file se.sunet.ati.integration.common.cfg to $KARAF_HOME/etc/ and update with appropriate values.
+
+
 Build
 -----
 
