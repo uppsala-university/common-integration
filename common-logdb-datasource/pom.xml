@@ -40,7 +40,7 @@
               com.mysql.jdbc,
               javax.resource,
               org.apache.geronimo.connector,
-              javax.sql"
+              javax.sql
             </Import-Package>
           </instructions>
         </configuration>
