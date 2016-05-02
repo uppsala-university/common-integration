@@ -15,7 +15,7 @@
     <feature>connector</feature>
     <feature>pax-jdbc-spec</feature>
     <!-- Drivers: -->
-    <bundle>mvn:mysql/mysql-connector-java/5.1.35</bundle>
+    <bundle>mvn:mysql/mysql-connector-java-uu-osgi/5.1.35</bundle>
     <bundle>wrap:mvn:org.tranql/tranql-connector/1.8</bundle>
     <bundle>wrap:mvn:org.tranql/tranql-connector-mysql-common/1.6</bundle>
     <bundle>mvn:se.sunet.ati.integration/common-logdb-datasource/1.0.0-SNAPSHOT</bundle>
