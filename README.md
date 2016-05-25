@@ -9,6 +9,8 @@ Basically there are two common ServiceMix integration components that in some wa
 - RDBMS datasource as OSGi service
 - JMS datasource as OSGi service
 
+![alt text](https://raw.githubusercontent.com/uppsala-university/common-integration/master/docs/common-integration.png "Common Integration Components")
+
 RDBMS datasource
 ----------------
 The RDBMS hosted by the integration runtime machine is a MariaDB and the datasource therefore is based on the MySQL driver. The datasource is published to the platform as an OSGi service. 
